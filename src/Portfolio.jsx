@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import openhiring from "./assets/openhiring.png";
 
 function Portfolio() {
   return (
@@ -96,7 +95,11 @@ function Portfolio() {
           {/* TLE1 */}
           <div className="font-mono max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 justify-around">
             <a href="#">
-              <img className="rounded-t-lg" src={openhiring} alt="" />
+              <img
+                className="rounded-t-lg"
+                src="https://www.openhiring.nl/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fw2rjkjc6%2Fproduction%2Fd425a0a1e349a8361a29c259710d232371204baf-1536x1024.jpg%3Frect%3D261%2C100%2C984%2C924%26w%3D700%26fit%3Dmax&w=1920&q=75"
+                alt=""
+              />
             </a>
             <div className="p-5">
               <a href="#">
