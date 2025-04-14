@@ -1,33 +1,31 @@
-import {createBrowserRouter, RouterProvider} from "react-router";
-import React, { Children, useState } from 'react'
+import { createBrowserRouter, RouterProvider } from "react-router";
 
-import Portfolio from './Portfolio'
-import Test from './test'
+import Portfolio from "./Portfolio";
 import Layout from "./Layout";
+import Home from "./Home";
 
-  const router = createBrowserRouter([
-    {
-      element: <Layout/>,
-      children:[
-        {
-          path: '/',
-          element:<Portfolio/>
-        },
-        {
-          path: '/about',
-          element:<Test/>
-        },
-        
-      ]
-    }
-  ])
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Portfolio />,
+      },
+      {
+        path: "/about",
+        element: <Home />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
