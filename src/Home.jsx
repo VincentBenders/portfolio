@@ -5,7 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <>
-        <div className="h-screen flex items-center bg-[#001427]">
+        <div className="font-mono h-screen flex items-center bg-[#001427]">
           <img
             src={photo}
             className="max-h-[700px] relative mx-auto rounded-lg overflow-hidden"
